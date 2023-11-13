@@ -1,0 +1,114 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(roof.jpg) no-repeat;
+    background-size: cover;
+    margin: 50px 20px;
+}
+
+.container {
+    max-width: 700px;
+    padding: 60px 60px;
+    margin: 0 auto;
+    background-color: #36454F;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 20px black;
+}
+
+.line {
+    border: 5px double rgb(218, 129, 69);
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.parameters {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    padding: 40px 0;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+#calculations {
+    padding-bottom: 20px;
+}
+
+.buttons {
+    margin: 20px auto 0;
+}
+
+button {
+    background-color: rgb(218, 129, 69);
+    border: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(226, 141, 84);
+    box-shadow: 2px 2px 2px rgba(131, 94, 70, 0.5)
+}
+
+input.error,
+select.error {
+    margin-bottom: 5px;
+    border: 1px solid red;
+    background-color: rgb(215, 175, 175);
+}
+
+#error {
+    background-color: white;
+    color: red;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.pictures {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.picture {
+    width: calc(33.3% - 10px);
+}
+
+img {
+    height: 137px;
+    width: 100%;
+}
+
+.picture p {
+    font-size: 12px;
+}
+
+.picture.disabled img,
+.picture.disabled p {
+    filter: brightness(30%);
+}
